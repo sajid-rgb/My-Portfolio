@@ -1,0 +1,38 @@
+.contact-form input {
+    width: 50%;
+    border-radius:5px;
+    margin-top: 5px;
+
+}
+.contact-form input:focus{
+    border-color: red;
+}
+.contact-form label {
+    color:green;
+
+}
+.contact-form textarea {
+    width: 50%;
+    height: 150px;
+    border-radius:5px;
+    margin-top: 5px;
+
+}
+.contact-pop-up{
+    width: 50%;
+    border-radius:5px;
+}
+@media(max-width:400px){
+    .contact-pop-up{
+        width:80%;
+    }
+    .contact-form input {
+        width: 80%;
+    
+    }
+    .contact-form textarea {
+        width: 80%;
+        height: 150px;
+    
+    }
+}
