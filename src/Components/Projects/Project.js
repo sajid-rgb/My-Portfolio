@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 const Project = ({project}) => {
-    const {name, description,image,Technology,liveSite}= project
+    const {name, description,image,Technology,liveSite,codeLink}= project
     useEffect(()=>{
         Aos.init({duration:2000})
     })
@@ -37,6 +37,7 @@ const Project = ({project}) => {
              </div>
             <div className="mt-2" >
             <a href={liveSite} target="_blank" className="mt-5">Live Site</a>
+            <a href={codeLink} target="_blank" className="mt-5 ml-3">Live Site</a>
             </div>
             </div>
             </div>

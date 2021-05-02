@@ -8,6 +8,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Footer from './Footer/Footer';
 import ContactMe from './ContactMe/ContactMe';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     useEffect(()=>{
@@ -27,6 +28,9 @@ const Home = () => {
             </div>
         <div data-aos='zoom-in-up'>
         <MyBlogs />
+        <div className="text-center mt-4">
+                <Link to='/blog' className="mt-3">See all....</Link>
+            </div>
         </div>
         <div data-aos='fade-up'><ContactMe/></div>
           <Footer></Footer> 

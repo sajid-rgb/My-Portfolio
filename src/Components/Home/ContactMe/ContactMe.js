@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Contact from '../../Contact/Contact';
 import emailjs from 'emailjs-com';
 import './ContactMe.css'
 import { Link } from 'react-router-dom';
+import { ContactContext } from '../../../App';
 const ContactMe = () => {
+    const [isSubmit,setIsSubmit] = useContext(ContactContext);
     const id = 'service_jq8tc1o'
     const tid ='template_6p5jj2w'
     const [isContact,setIsContact] = useState(false)
@@ -31,8 +33,8 @@ const ContactMe = () => {
                         <h3 className="btn btn-default">Do you want to contact with me?</h3>
                 <button onClick={handleContact} className="btn btn-danger">YES</button>
                 <button  className="btn btn-secondary ml-3" as={Link}to="/">NO</button>
-                    </div>: <div className="contact-pop-up" style={{border:"2px solid grey",textAlign:"center",backgroundColor:"whiteSmoke"}}>
-                     <button className="btn btn-secondary mt-3 mb-3" onClick={()=>setIsContact(false)} >Close</button>
+                    </div>: <div className="" style={{border:"2px solid white",textAlign:"center",backgroundColor:"transparent"}}>
+                     <button className="btn btn-secondary mt-3 " onClick={()=>setIsContact(false)} >Close</button>
 
                     </div>
                 }

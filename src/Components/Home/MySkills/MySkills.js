@@ -51,14 +51,14 @@ const skills = [
 ]
 const MySkills = () => {
     return (
-       <div className="container mt-5">
+       <div className="container mt-2">
             <h2 className="text-center text-dark mt-md-5 mt-2">MY SKILLS</h2>
             <hr style={{backgroundColor:'green'}}/>
-            <div className="container row mx-auto mt-md-5 mt-0">
+            <div className="container row mx-auto mt-md-2 mt-0">
             {
                 skills.map((skill,index) =><div className='col-md-3 col-6 text-center text-md-left'>
                      {
-                         index%2==0 ? <button className="btn btn-info mt-3 w-100">{skill.name}</button>:<button className="btn btn-success w-100 mt-3">{skill.name}</button>
+                         index%2==0 ? <button className="btn btn-info mt-3 w-100">{skill.name}</button>:<button className="btn btn-secondary w-100 mt-3">{skill.name}</button>
                     
                     
                      }
