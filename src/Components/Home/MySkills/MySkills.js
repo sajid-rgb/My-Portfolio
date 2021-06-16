@@ -47,7 +47,19 @@ const skills = [
     },
     {
         name: 'Google Map'
-    }
+    },
+    {
+        name: 'React Native'
+    },
+    {
+        name: 'React Router'
+    },
+    {
+        name: 'React Bootstrap'
+    },
+    {
+        name: 'C'
+    },
 ]
 const MySkills = () => {
     return (
