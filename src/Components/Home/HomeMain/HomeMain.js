@@ -23,7 +23,7 @@ const HomeMain = () => {
       /></span>
                  </h2>
                  </div>
-                 <p className="text-dark">I am a professional MERN Stack developer. I am hard Worker,love to work and l always want to learn new things.</p>
+                 <p className="text-dark">I am a professional MERN Stack developer. I am hard Worker,love to work and always want to learn new things.</p>
                  <Link to='/work' className="">
                  <button className=" btn btn-success rounded mr-3 ml-5">My Work</button>
                  </Link>

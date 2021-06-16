@@ -12,14 +12,18 @@ const Work = ({work}) => {
             <Card>
                 <Card.Img src={picture} style={{height:'250px'}}></Card.Img>
                 <Card.Header>
-                    <Card.Title className='text-center text-success'>{name}</Card.Title>
+                    <Card.Title className='text-center text-dark'>{name}</Card.Title>
                 </Card.Header>
                 <Card.Body>
                     <Card.Text className='text-justify'>{description}</Card.Text>
                <h6 className='text-dark'>Technology</h6>
+               <div className='row'>
                {
-                   Technology.map(tech=><li>{tech}</li>)
+                   Technology.map(tech=><div className='col-6 col-md-4'>
+                       <button className='btn w-100 btn-secondary mt-3'>{tech}</button>
+                   </div>)
                }
+               </div>
                 </Card.Body>
                 <Card.Footer className='text-center'>
                     <a href={liveSite} target="_blank">

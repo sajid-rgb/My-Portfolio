@@ -11,9 +11,9 @@ const Navigation = () => {
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto">
       <Nav.Link as={Link} to="/home">Home</Nav.Link>
+      <Nav.Link as={Link} to="/about">About me</Nav.Link>
       <Nav.Link as={Link} to="/work">Projects</Nav.Link>
       <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-      <Nav.Link as={Link} to="/about">About me</Nav.Link>
       <Nav.Link as={Link} to="/contact">Contact me</Nav.Link>
       <a href='https://drive.google.com/uc?export=download&id=1nCi97opCJlF_s-GphNvO0RB3gCXewvzb' download>
       <button className="btn btn-primary">My Resume</button>
